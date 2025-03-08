@@ -91,7 +91,7 @@ class Diario {
             System.out.println("Misión no encontrada con " + criterio + ": " + valor);
         }
     }
-    // Método para editar una misión (bonus)
+    // Método para editar una misión
     public void editarMision(String nombre, String nuevaFecha, String nuevaDesc) {
         Mision actual = cabeza;
         while (actual != null) { //Buscamos la misión por título
@@ -121,7 +121,7 @@ public class DiarioAventurero {
             System.out.println("2. Eliminar última misión");
             System.out.println("3. Mostrar todas las misiones");
             System.out.println("4. Buscar misión");
-            System.out.println("5. Editar misión"); // Nueva opción
+            System.out.println("5. Editar misión");
             System.out.println("6. Salir");
             System.out.print("Selecciona una opción: ");
             int opcion = scanner.nextInt();
@@ -158,7 +158,7 @@ public class DiarioAventurero {
                         System.out.println("Criterio no válido. Usa 'titulo' o 'fecha'.");
                     }
                     break;
-                case 5: // Editar misión (bonus)
+                case 5: // Editar misión
                     System.out.print("Ingresa el título de la misión a editar: ");
                     String tituloEditar = scanner.nextLine();
                     System.out.print("Ingresa la nueva fecha (21/12/2005): ");
